@@ -9,7 +9,7 @@ The second part is about some python basics that you have learnt in class.
 
 ## Instruction for Github:
 
-**To be completed**
+**To be shown in class**
 
 ## Lab task
 
