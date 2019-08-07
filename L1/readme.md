@@ -25,7 +25,7 @@ output the area of a circle with 2 decimal place. Name the file `Q3.py` (*Noted:
 >
 > The circle area is 1256.64
 
-4. Write the code for determining a year is leap year or not. The program shall allow user to enter the year and output either "Yes, it is a leap year" or "No, it is not a leap year". Name the file `Q4.py`.
+4. (Homework: to be submitted before 10:15am Friday). Write the code for determining a year is leap year or not. The program shall allow user to enter the year and output either "Yes, it is a leap year" or "No, it is not a leap year". Name the file `Q4.py`.
 
-5. Starts with the skeleton code [Q5.py](Q5.py) and complete the Paper-Rock-Scissor game. The game will ask the user to input 1,2 or 3. The game randomly pick paper or rock or scissor and prints it choice.
-Finally the game will say the either "player wins", "player lose", or "draw". Name the file `Q5.py`.
+~~~5. Starts with the skeleton code [Q5.py](Q5.py) and complete the Paper-Rock-Scissor game. The game will ask the user to input 1,2 or 3. The game randomly pick paper or rock or scissor and prints it choice.
+Finally the game will say the either "player wins", "player lose", or "draw". Name the file `Q5.py`.~~~
