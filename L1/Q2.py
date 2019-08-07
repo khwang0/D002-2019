@@ -11,3 +11,6 @@ f=1+2**10
 print (f)
 g= ceil(26.0/4)
 print (g)
+r=sqrt(100/pi)
+A=(2*r+1)**2
+print (A)
