@@ -24,7 +24,7 @@ p_choice = int(p_choice)
 
 # step2: generate a random choice for minion, save it in variable m_choice
 m_choice = random.randint(1,3)
-
+m_choice = int(m_choice)
 # status is used for the win/lose/draw of the game
 # status = 1 means player wins; status = 2 means minion wins; status = 3 means draw;
 # status = 4 means user gives invalid input, e.g. player inputs -1 or 4
@@ -32,13 +32,13 @@ status = 0 # initialized as 0
 # step 3: given choices from player and minion, decide the game status
 number= p_choice - m_choice
 if p_choice > 3 or p_choice < 1:
-    status == 4
+    status=4
 elif number == 1 or number == -2:
-    status==1
+    status=1
 elif number == -1 or number == 2:
-    status==2
+    status=2
 elif number == 0:
-    status==3
+    status=3
 
 # step4: display the minion's choice
 if m_choice == 1:
