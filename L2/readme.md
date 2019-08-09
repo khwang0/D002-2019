@@ -17,7 +17,7 @@ while y < n:
         if y % x == 0:
             print("%d has factor %d; break" % (y, x))
             break
-            x = x - 1
+        x = x - 1
     if x == 1:
         print("%d is a prime" % y)
             
