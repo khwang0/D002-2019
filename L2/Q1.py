@@ -1,5 +1,5 @@
 from math import *
-x = int(input("Enter a positive integer larger than 2 : "))
+x = int(input("Enter a positive integer : "))
 y = 2
 prime = True
 if(x <= 1):
