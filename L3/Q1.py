@@ -7,9 +7,9 @@ from math import *
 people = int(input("How many people are sharing the bill?\n"))
 bill = float(input("How much is the bill?\n"))
 print("Kevin paid the bill first. But Kevin only has 100 dollar notes")
-print("So Kevin is going to paid $%d." % (________))   # replace with your code
-print("The cafe is giving %f to Kevin." % (________))  # replace with your code
-print("Each one should give %f to Kevin." % (_______)) # replace with your code
+print("So Kevin is going to paid $%d." % (ceil(bill/100)*100))  # replace with your code
+print("The cafe is giving %f to Kevin." % ((ceil(bill/100)*100)-bill))  # replace with your code
+print("Each one should give %f to Kevin." % (bill/people)) # replace with your code
 
 # b) Clap at Seven 
 # The purpose of the following program is to print the number from 1 to 100,
@@ -18,7 +18,7 @@ print("Each one should give %f to Kevin." % (_______)) # replace with your code
 
 number = 1
 while number <= 100:
-    if _______________ or ______________:   # replace with your code
+    if number%7==0 or number%10==7:   # replace with your code
         print('X', end=' ')
     else:
         print(number, end=' ')    
@@ -31,19 +31,40 @@ print("\nGame Over.")
 # and see how long it takes to get a dice
 
 from random import randint
-
-#code for rolling a dice
 number = randint(1,6)
 print("I got a %d" % number)
 count = 1
-while ___________________ : # replace with your code
-    # Write some more code
+while True : 
     print("I got a %d" % number)
+    if number==6:
+        break
     count = count + 1
-
+    number = randint(1,6)
+    
 print("Oh, it takes me %d times to get a 6!!!" % count)
 
 
 # d) How long it takes, in general?
 # Repeat the experiment in part c for 100 times and see what is the average 
 # value of the count would be. This is challenging, isn't it?
+qwer=[]
+asdfghjkl=0
+while asdfghjkl<100 :
+    number = randint(1,6)
+    print("I got a %d" % number)
+    count = 1
+    while True : 
+        print("I got a %d" % number)
+        if number==6:
+            break
+        count = count + 1
+        number = randint(1,6)
+    
+    print("Oh, it takes me %d times to get a 6!!!" % count)
+    qwer.append(count)
+    asdfghjkl+=1
+qwe=0
+for zxcv in qwer :
+    qwe=qwe+zxcv
+print(qwe/100)
+
