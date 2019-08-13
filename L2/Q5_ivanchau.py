@@ -35,9 +35,15 @@ elif p_choice == 3 and m_choice == 3:
 print(m_choice)
 print(status)
 
+#win = 0
 if status == 1:
     print("You win!")
+    #win = win + 1    
 if status == 2:
     print("You lose!")
+ #   win = 0
 if status == 3:
     print("Draw!")
+#print(win)
+#if win = 3:
+ #   print("Congradulations! You beat the king!")
