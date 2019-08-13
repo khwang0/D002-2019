@@ -64,4 +64,4 @@ while v <= 100:
    print("I need %d times" % count)
    totalcount = count + totalcount
    v = v + 1
-print("Oh, it takes me %d times to get a 6!!! on average" % int(totalcount/100))
+print("Oh, it takes me %d times to get a 6 on average!!!" % int(totalcount/100))
