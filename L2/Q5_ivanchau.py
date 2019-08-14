@@ -12,15 +12,17 @@ print("""
 """)
 p_choice = int(input("input your choice\n"))
 m_choice = randint(1, 3)
-
+win = 0
 status = 0
 if p_choice == 1 and m_choice == 3:
     status = status+1
-elif p_choice == 2 and m_choice == 1:
+
+    elif p_choice == 2 and m_choice == 1:
     status = status+1
 elif p_choice == 3 and m_choice == 2:
     status = status+1
-elif p_choice == 1 and m_choice == 2:
+
+    elif p_choice == 1 and m_choice == 2:
     status = status+2
 elif p_choice == 2  and m_choice == 3:
     status = status+2
@@ -35,7 +37,7 @@ elif p_choice == 3 and m_choice == 3:
 print(m_choice)
 print(status)
 
-#win = 0
+
 if status == 1:
     print("You win!")
     #win = win + 1    
@@ -44,6 +46,4 @@ if status == 2:
  #   win = 0
 if status == 3:
     print("Draw!")
-#print(win)
-#if win = 3:
- #   print("Congradulations! You beat the king!")
+
