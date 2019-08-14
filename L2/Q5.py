@@ -54,11 +54,12 @@ while counter>0:
  status = 0 # initialized as 0
 # step 3: given choices from player and minion, decide the game status
 
+ v = (p_choice - m_choice +3) % 3
  if p_choice == m_choice:
     status = 3
- elif (p_choice == 2 and m_choice == 1) or (p_choice == 3 and m_choice == 2) or (p_choice == 1 and m_choice == 3):
+ elif v == 1:
     status = 1
- elif (m_choice == 2 and p_choice == 1) or (m_choice == 3 and p_choice == 2) or (m_choice == 1 and p_choice == 3):
+ elif v == 2:
     status = 2
  else :
     status = 4
