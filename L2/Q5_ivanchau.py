@@ -16,34 +16,42 @@ win = 0
 status = 0
 if p_choice == 1 and m_choice == 3:
     status = status+1
-
+    win = win + 1
     elif p_choice == 2 and m_choice == 1:
     status = status+1
+    win = win + 1
 elif p_choice == 3 and m_choice == 2:
     status = status+1
-
-    elif p_choice == 1 and m_choice == 2:
+    win = wion + 1
+elif p_choice == 1 and m_choice == 2:
     status = status+2
+    win = win * 0
 elif p_choice == 2  and m_choice == 3:
     status = status+2
+    win = win * 0
 elif p_choice == 3 and m_choice == 1:
     status = status+2
+    win = win * 0
 elif p_choice == 1 and m_choice == 1:
     status = status+3
+    win = win * 0
 elif p_choice == 2 and m_choice == 2:
     status = status+3
+    win = win * 0
 elif p_choice == 3 and m_choice == 3:
     status = status+3
+    win = win * 0
 print(m_choice)
 print(status)
-
+print(win)
 
 if status == 1:
     print("You win!")
     #win = win + 1    
 if status == 2:
     print("You lose!")
- #   win = 0
 if status == 3:
     print("Draw!")
+if win == 3:
+    print(Congradulations! You beat the king!)
 
