@@ -7,3 +7,5 @@ There is no lecture note released in advance ^.)
 
 Bonus. Work on a 6x6 Sudoku game
 
+![](https://i.pinimg.com/originals/ef/5c/7b/ef5c7b0f32475350530d9003d6ffeefd.png)
+(reference: https://www.pinterest.com/pin/428616089518607077/)
