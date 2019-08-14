@@ -2,6 +2,8 @@
 
 #Step 1: Import necessary modules
 import random
+
+
 #Step 2: Welcome Message
 print('''Welcome to the Banana Guessing Game
 Dave hid some bananas. Your task is to find out the number of bananas he hid.''')
@@ -12,7 +14,17 @@ print ("shhh, Dave hides %s bananas" % n)
 found = False
 count = 0
 #Step 4: Give three chances to the players 
-
+while count < 3:
+        count = count + 1
+        guess = int(input("Please enter your guess"))
+        if guess == n:
+                found = True
+                break
+        if guess < n:
+                print("Too small")
+        if guess > n:
+                print("Too big")
+        
 
 
 #Step 5: Display a message
