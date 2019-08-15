@@ -33,10 +33,11 @@ print("""
 """) # 1 for rock; 2 for paper; 3 for scissor
 
 # step1: get player's choice, save it in variable p_choice
-
+p_choice = int(input("Please enter 1-3: "))
 
 # step2: generate a random choice for minion, save it in variable m_choice
-
+from random import randint
+m_choice = randint(1,3)
 
 
 
@@ -46,10 +47,16 @@ print("""
 status = 0 # initialized as 0
 # step 3: given choices from player and minion, decide the game status
 
+if (p_choice < 1 or p_choice > 3):
+    status = 4
 
-
-
-
+d = (m_choice - p_choice) % 3
+if d == 0:
+    status = 0
+if d == 1:
+    status = 2
+if d == 2:
+    status = 1
 
 
 
