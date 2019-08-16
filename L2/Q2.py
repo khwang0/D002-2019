@@ -1,18 +1,20 @@
-def  prime(x):
-    x = int(x)
-    n = 2
-    if x>1 :
-        while n<x :
-            if x%n ==0 :
-                print(str(x) + ' has factor ' + str(n))
+def asd() :
+    emp = input('please input a positive integer ')
+    emp = int(emp)
+    n=2
+    status = 0
+    while True :
+        if emp == 3 or emp == 2 :
+            print(str(emp) + ' is a prime number')
+            break
+        if emp%n == 0 :
+            print(str(emp) + ' has factor ' + str(n))
+            status = 1
+        n += 1
+        if n == emp :
+            if status==1 :
                 break
-            else :
-                n = n+1
-            if  n+1 == x :
-                print( str(x) + ' is a prime number')
-            if x == 3 :
-                print( str(x) + ' is a prime number')
-        if x == 2 :
-            print( str(x) + ' is a prime number')
-                
-prime(input('Please input a positive integer number: '))
+            if status == 0 :
+                print(str(emp) + ' is a prime number')
+                break
+asd()
