@@ -1,6 +1,3 @@
-# L1 Q1: play rock-paper-scissor
-# Player vs minion
-
 # Import necessary modules
 import random
 
@@ -16,14 +13,14 @@ print("""
       (_____)                     _______)                  __________)
       (____)                     _______)                  (____)
 ---.__(___)             ---.__________)              ---.__(___)
-
 """) # 1 for rock; 2 for paper; 3 for scissor
 
 # step1: get player's choice, save it in variable p_choice
+p_choice = int(input())
 
 
 # step2: generate a random choice for minion, save it in variable m_choice
-
+m_choice = random.randint(1, 3)
 
 
 
@@ -32,6 +29,12 @@ print("""
 # status = 4 means user gives invalid input, e.g. player inputs -1 or 4
 status = 0 # initialized as 0
 # step 3: given choices from player and minion, decide the game status
+if(p_choice > 3 or p_choice < 1):
+    status = 4
+else:
+    status = (p_choice - m_choice) % 3
+if(status == 0):
+    status = 3
 
 
 
@@ -153,4 +156,4 @@ elif status == 3:
 ─────────▀▀▀▀────────▀▀▀▀
 """)
 else:
-    print("Wrong input!") # the unclear result should be due to the unexpected input
+    print("Wrong input!")
