@@ -1,5 +1,3 @@
-# Tic-Tac-Toe
-
 def printcell(cells):
     print("-" * 13)
     for i in range(0, 3):
@@ -32,5 +30,3 @@ while True:
     if cells[row][col] == ' ':
         break
     print("It is taken already")
-
-
